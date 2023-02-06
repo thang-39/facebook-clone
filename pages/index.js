@@ -4,6 +4,7 @@ import Sidebar from '@/components/Sidebar'
 import Head from 'next/head'
 import Login from '@/components/Login'
 import Feed from "@/components/Feed"
+import RightSidebar from "@/components/RightSidebar"
 
 export default function Home({session}) {
   if (!session) return <Login />;
@@ -21,6 +22,7 @@ export default function Home({session}) {
         {/* Feed (Create Post and Posts) */}
         <Feed />
         {/* Right Sidebar */}
+        <RightSidebar />
       </main>
     </>
   )

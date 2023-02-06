@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import {FiThumbsUp} from "react-icons/fi"
 import {FaRegCommentAlt} from 'react-icons/fa'
 import { RiShareForwardLine } from 'react-icons/ri';
@@ -24,8 +24,7 @@ const Post = () => {
         <div className='relative h-60 md:h-96 bg-white'>
             <Image 
               src="https://images.pexels.com/photos/7034614/pexels-photo-7034614.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-              height={750}
-              width={1260}
+              layout="fill"
               objectFit="cover"
             />           
         </div>
