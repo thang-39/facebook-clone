@@ -9,7 +9,9 @@ export const postSlice = createSlice({
         addPost: (state, action) => {
             state.value.push(action.payload);
         },
-        addAllPost: (state,action) => {},
+        addAllPost: (state,action) => {
+            state.value.push(...action.payload);
+        },
     },
 });
 
