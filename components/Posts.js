@@ -17,12 +17,12 @@ const Posts = () => {
         });
     };
     fetchData();
-    console.log(posts);
   }, [])
   return (
     <div>
       {posts.map((post) => (
-        <Post post={post} key={post.id}/>
+        <Post post={post} key={post.id} />
+        
       ))}
     </div>
     
